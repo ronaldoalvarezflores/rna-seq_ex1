@@ -32,6 +32,13 @@ p_libsize <- libsizes_df %>%
     title = "Tamaño de librería por muestra (airway)",
     x = "Muestra",
     y = "Total de lecturas (conteos)"
+  ) +
+  theme(
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.title = element_text(size = 13),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+    axis.text.y = element_text(size = 11),
+    legend.position = "none"   # quita la leyenda; puedes comentarlo si la quieres
   )
 
 if (!dir.exists("results")) dir.create("results")
