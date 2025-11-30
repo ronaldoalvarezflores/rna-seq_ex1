@@ -123,4 +123,4 @@ write.csv(
   row.names = FALSE
 )
 
-print(top10)  # opcional: para verlos también en la consola al ejecutar el script
+print(top10)  # Optional: To also see them in the console when running the script
